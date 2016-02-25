@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity  {
                 Notification notification= new Notification.Builder(getApplicationContext())
                         .setContentTitle("New message")
                         .setContentText( model.getName())
-                        .setSound(Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + getPackageName() +R.raw.thugring))
+                        .setSound(Uri.parse("android.resource://com.example.sagarbhatt.chatapp/raw/thugringa"))
                         .setContentIntent(pendingIntent)
                         .setSmallIcon(R.drawable.messenger_bubble_small_blue)
                         .build();
